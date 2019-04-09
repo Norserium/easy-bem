@@ -3,7 +3,7 @@
 /**
  * BEM class name factory.
  *
- * @typedef {Function} BemCn
+ * @typedef {Function} Bem
  * @param {String|Object} [elementOrMods] Element name or hash object with mods
  * @param {Object} [mods] Hash object with mods
  * @returns {String}
@@ -13,7 +13,7 @@
  * Returns BEM class name factory.
  *
  * @param {String} componentName Block name
- * @returns {BemCn}
+ * @returns {Bem}
  */
 module.exports = function bem(componentName) {
     return function (elementOrMods, mods) {
@@ -52,8 +52,8 @@ module.exports = function bem(componentName) {
                     if (value) {
                         result += ' ' + (
                             typeof value === 'boolean'
-                                ? (base + '_' + name)
-                                : (base + '_' + name + '_' + value)
+                                ? (base + '--' + name)
+                                : (base + '--' + name + '_' + value)
                         );
                     }
 

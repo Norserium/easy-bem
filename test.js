@@ -18,14 +18,14 @@ describe('bem-cn', function () {
         var b = bem('block-name');
         expect(b({
             'some-mod': 'visible'
-        })).to.be.equal('block-name block-name_some-mod_visible');
+        })).to.be.equal('block-name block-name--some-mod_visible');
     });
 
     it('should return block with mod css-class with `mods` argument (Boolean mod)', function () {
         var b = bem('block-name');
         expect(b({
             'some-mod': true
-        })).to.be.equal('block-name block-name_some-mod');
+        })).to.be.equal('block-name block-name--some-mod');
     });
 
     it('should return block without mod css-class with `mods` argument and empty mods values', function () {
@@ -47,7 +47,7 @@ describe('bem-cn', function () {
                 'some-mod2': true
             }
         )).to.be.equal(
-            'block-name__element-name block-name__element-name_some-mod_visible block-name__element-name_some-mod2'
+            'block-name__element-name block-name__element-name--some-mod_visible block-name__element-name--some-mod2'
         );
     });
 });

@@ -1,12 +1,15 @@
 {
-  "name": "bem-cn-fast",
-  "version": "1.0.2",
-  "description": "Fast BEM class name generator",
+  "name": "easy-bem",
+  "version": "1.0.0",
+  "description": "Easy BEM class name generator",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
-  "author": "Vitaliy Green",
+  "contributors": [
+    "Vitaliy Green",
+    "Norserium"
+  ],
   "license": "MIT",
   "keywords": [
     "react",
@@ -14,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GREENpoint/bem-cn-fast.git"
+    "url": "git+https://github.com/Norserium/easy-bem.git"
   },
   "bugs": {
-    "url": "https://github.com/GREENpoint/bem-cn-fast/issues"
+    "url": "https://github.com/Norserium/easy-bem/issues"
   },
   "devDependencies": {
     "chai": "^3.5.0",
