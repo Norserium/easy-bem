@@ -11,8 +11,17 @@ Fork of [bem-cn-fast](https://github.com/GREENpoint/bem-cn-fast) that uses anoth
 - The modifier name is separated from the block or element name by a double dash (`--`)
 - The modifier value is separated from the modifier name by a single underscore (`_`)
 
-Usage
------
+## Install
+
+```bash
+npm install --save easy-bem
+```
+
+```bash
+yarn add easy-bem
+```
+
+## Usage
 
 ```javascript
 import bem from 'easy-bem';
