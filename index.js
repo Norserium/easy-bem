@@ -29,16 +29,6 @@ module.exports = function bem(componentName) {
             mods = elementOrMods;
         }
 
-        if (process.env.NODE_ENV !== 'production') {
-            if (element && typeof element !== 'string') {
-                throw new Error('You must provide `element` as string');
-            }
-
-            if (mods && typeof mods !== 'object') {
-                throw new Error('You must provide `mods` as plain object');
-            }
-        }
-
         var base = componentName;
         if (element) {
             base += '__' + element;
